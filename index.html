@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Hello Vue</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{titolo}}</h1>
+        <button @click="btnclick">Genera Immagine random</button>
+        <div>
+        <img v-bind:src="urls" alt="">
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
